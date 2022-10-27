@@ -1,0 +1,203 @@
+
+.widescreen{
+display: block;
+max-width: calc(100% + 40px);
+
+}
+.game-box {
+margin-top: 5%;
+background: #f4f4f4;
+padding: 70px 0;
+text-align: center;
+}
+.game-buttons {
+text-align: center;
+
+}
+.game-info-center{
+display: flex;
+justify-content: center;
+padding-top: 15px;
+}
+.button{
+font-size: 16px;
+padding: 7px 22px;
+border-radius: 5px;
+background: #0D9095;
+color: #fff;
+margin: 0;
+text-decoration: none;
+border: none;
+display: inline-block;
+vertical-align: middle;
+text-align: center;
+transition: all ease-in 1s;
+}
+
+.button:active{
+background: #666;
+transition: all 0.1s;
+}
+
+.game-info-center{
+text-align: center;
+line-height: 22px;
+}
+
+.param{
+    font-size: 22px;
+    font-style: bold;
+    margin: 0 10px;
+}
+
+.field{
+    border: 2px solid black;
+    position: relative;
+    width: 80%;
+}
+.overlay{
+    background-color: #666;
+    position: absolute;
+    z-index: -10;
+    opacity: 0.3;
+}
+
+.cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    border: 1.3px solid grey;
+    cursor: pointer;
+    position: absolute;
+    font-size: 40px;
+    transition: all 0.2s;
+    user-select: none;  
+}
+
+.game-content{
+    margin: 5px auto 10px;
+    width: fit-content;
+}
+
+.you_won{
+    position: absolute;
+    display: block;
+    z-index: -10;
+    width: 620px;
+    height: 150px;
+    margin-top: 110px;
+    margin-left:calc(50% - 310px);
+    border: 2px solid #202020;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px #666;
+    font-size: 24px;
+    line-height: 0px;
+    font-weight: 800;
+    text-align: center;
+    justify-content: center;
+    background-color: gold;
+    
+}
+
+.close_button{
+    position: relative;
+    display: block;
+    border: 2px solid black;
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: 20px;
+    padding-top: 2px;
+    width: 25px;
+    height: 25px;
+    background-color: firebrick;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 3px 3px 5px #666;
+    cursor: pointer;  
+}
+.sound_tiles{
+    align-items: center;
+    display: flex;
+    display: inline-flex;
+
+}
+
+.text_sound{
+    display: block;
+    padding-top: 8px;
+    padding-right: 10px;
+}
+.switch-btn {
+    display: inline-block;
+    width: 35px;
+    height: 20px;
+    background: #bfbfbf;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 13px;
+    cursor: pointer;
+    position: relative;
+    transition-duration: 300ms;
+    margin-top: 10px;
+  }
+  .switch-btn::after {
+    content: "";
+    height: 15px;
+    width: 15px;
+    background: #fff;
+    top: 2.5px;
+    border-radius: 13px;
+    left: 3px;
+    transition-duration: 300ms;
+    position: absolute;
+    z-index: 1;
+  }
+  .switch-on {
+    background: #118c4e;
+    border-radius: 10px;
+  }
+  .switch-on::after {
+    left: 17px;
+  }
+
+.over{
+    width: 100%;
+    height: 100%;
+    margin-top: -100px;
+    background-color: #666;
+    position: fixed;
+    z-index: -10;
+    opacity: 0.3; 
+}
+.exit{
+    font-size: 20px;
+    line-height: 20px;
+    display: inline;
+}
+
+
+@media (max-width: 420px) {
+    .cell{
+        width: 75px;
+        height: 75px;
+        font-size: 30px;
+    }
+    .param{
+        font-size: 18px;
+        margin: 0;
+    }
+    .game-info-center{
+        line-height: 20px;
+}
+.button{
+    font-size: 16px;
+    padding: 7px 22px;
+    border-radius: 5px;
+}
+}
